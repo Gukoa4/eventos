@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Eventos</title>
+</head>
+
+<body>
+    <h1>Temario de eventos js</h1>
+    <ul>
+        <h2>Eventos</h2>
+        <dl>
+            <dt>Definicion</dt>
+            <dd>Un evento es cualquier cambio que ocurre en la pagina</dd>
+            <dt>Event Handlers</dt>
+            <dd>maneja los eventos por ejemplo onclick pero no se utiliza mas</dd>
+            <dt>Event listeners</dt>
+            <dd>Este se usa para escuchar eventos y manipularlos por ejemplo button.addEventListener("click",funcion)</dd>
+            <dt>Objeto Evento</dt>
+            <dd>para verlo se hace boton("click",(evt)=>{console.log(evt)}) y asi muestra las propiedades
+                e.target muestra el elemento que ejecuto el evento
+            </dd>
+            <dt>Event Flow</dt>
+            <dd></dd>
+            <dt>Event Bubbling vs Event Capturing</dt>
+            <dd>Bubbling es por defecto y genera que se ejecuten los eventos en orden desde los hijos hacia los 
+                padres ademas se puede cambiar el orden agregando "true" para espeificar el que se va a mostrar primero
+                boton("click",(evt)=>{console.log(evt), true})</dd>
+            <dt>event.stopPropagation()</dt>
+            <dd>con esto evitamos que el evento siga, ya no se ejecutan los padres. evt.stopPropragation()</dd>
+        </dl>
+    </ul>
+    <ul>
+        <h2>Eventos del mouse</h2>
+        <dl>
+            <dt>click</dt>
+            <dl> <button class="buton">click</button></dl>
+            <dt>dblclick</dt>
+            <dl><button class="dblbuton">doble click</button></dl>
+            <dt>mouseover</dt>
+            <dl><button class="mouseover">Cuando pasa el mouse</button></dl>
+            <dt>mouseout</dt>
+            <dl><button class="mouseout">Cuando salee el mouse</button></dl>
+            <dt>contextmenu</dt>
+            <dl><button class="contextmenu">Cuando se abre menu conextual</button></dl>
+            <dt>mouseenter</dt>
+            <dl><button class="mouseenter">Cuando entra el mouse</button></dl>
+            <dt>mouseleave</dt>
+            <dl><button class="mouseleave">Cuando sale el mouse</button></dl>
+            <dt>mouseup</dt>
+            <dl><button class="mouseup">Cuando suelta el click del mouse</button></dl>
+            <dt>mousedown</dt>
+            <dl><button class="mousedown">Cuando presiono el click del mouse</button></dl>
+            <dt>mousemove</dt>
+            <dl><button class="mousemove">Cuando pasa el mouse</button></dl>
+        </dl>
+    </ul>
+    <ul>
+        <h2>Eventos del teclado</h2>
+        <dt>Keydown</dt>
+        <dl>Cuando la tecla se presiona</dl>
+        <input type="text" class="input-keydown">
+        <dt>Keypress</dt>
+        <dl>Cuando la tecla se presion y se suelta</dl>
+        <input type="text" class="input-keypress">
+        <dt>onkeyup</dt>
+        <dl>Cuando la tecla se suelta</dl>
+        <input type="text" class="input-onkeyup">
+        <div class="keycontenedor"></div>
+    </ul>
+    <ul>
+        <h2>Eventos de la interfaz</h2>
+        <dl>Error</dl>
+        <dt>Ocurre cuando sucede un error durante la carga</dt>
+        <dl>Load</dl>
+        <dt>Ocurre cuando se ha cargado</dt>
+        <dl>Beforeunload</dl>
+        <dt>Ocurre antes de que el documento este a punto de descargarse</dt>
+        <dl>unload</dl>
+        <dt>Ocurre cada vez que se ha descargado la pagina </dt>
+        <dl>resize</dl>
+        <dt>Ocurre cuando se cambia el tamaño de la vista del documento</dt>
+        <dl>scroll</dl>
+        <dt>Ocurre cuando se desplaza la barra</dt>
+        <dl>select</dl>
+        <dt>Ocurre despues de que el usuario selecciona un texto del input o text area</dt>
+        <input type="text" class= "seleccion">
+        <div class="seleccionado"></div>
+    </ul>
+    <ul>
+        <h2>Temporizadores</h2>
+        <dl>setTimeout()</dl>
+        <dt>Es para ejecutar una funcion con delay. Por ejemplo setTimeout (saludar,2000)</dt>
+        <dl>setInterval()</dl>
+        <dt>Es para ejecutar repetidas veces en el intervalo elegido.</dt>
+        <dl>clearTimeout()</dl>
+        <dt>con esto se eliminan los temporizadores que se pasen por parametro. clearTimeout(temporizador,tiempo)</dt>
+        <dl>clearInterval()</dl>
+        <dt></dt>
+    </ul>
+    <script src="scriptss.js"></script>
+</body>
+
+</html>
