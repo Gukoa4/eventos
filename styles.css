@@ -1,0 +1,25 @@
+dt {
+    font-weight: bold;
+}
+
+h2 {
+    text-decoration: underline;
+}
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    outline: none;
+}
+.seleccionado {
+    font-size: 2em;
+    font-weight: bold;
+}
+.keycontenedor{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #666;
+}
+.keycontenedor b {
+    color:#333;
+}
